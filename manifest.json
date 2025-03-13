@@ -1,14 +1,1 @@
-{
-    "manifest_version":3,
-    "name":"AutoPause Extension",
-    "version":"1.1",
-    "description":"Automatically pauses and resumes audio and video with toggle option.",
-    "permissions":["tabs","activeTab","storage","scripting"],
-    "background": {
-        "service_worker":"background.js"
-    },
-    "action":{
-        "default_title":"AutoPause"
-    },
-    "option_page":"option.html"
-}
+88
