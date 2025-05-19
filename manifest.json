@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Auto Pause",
+  "description": "Automatically pauses video/audio when switching tabs.",
+  "version": "1.0",
+  "permissions": ["tabs", "storage", "scripting"],
+  "icons": {
+  "48": "icon.png"
+},
+"action": {
+  "default_popup": "popup.html",
+  "default_icon": {
+    "48": "icon.png"
+  }
+}
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

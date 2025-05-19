@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Pause Toggle</title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    #toggleButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #toggleButton.active {
+      background-color: #28a745;
+    }
+    img {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Extension Icon -->
+  <img src="icon.png" alt="Extension Icon" width="48" height="48">
+
+  <!-- Toggle Button -->
+  <button id="toggleButton">Toggle Auto Pause</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
